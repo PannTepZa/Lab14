@@ -43,20 +43,10 @@ void findLocalMax(const double A[][N], bool B[][N]){
 
 void showMatrix(const bool B[][N]){
 	for(int i=0;i<N;i++){
-		if (i==0 || i==N-1){
-			for(int j=0;j<N;j++){
-				cout << "0 ";
-			}
-			cout << "\n";
-			continue;
-		}
 		for(int j=0;j<N;j++){
-			if (j==0 || j==N-1){
-				cout << "0 ";
-				continue;
-			}
 			cout << B[i][j] << " ";
 		}
 		cout << "\n";
 	}
 }
+
